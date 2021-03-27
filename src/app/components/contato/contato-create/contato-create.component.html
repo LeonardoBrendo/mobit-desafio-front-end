@@ -1,0 +1,38 @@
+<mat-card>
+    <mat-card-title>Novo contato</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome *" [(ngModel)]="contato.nome" name="nome">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Sobrenome *" [(ngModel)]="contato.sobreNome" name="sobreNome">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="CPF *" validateCpf="contato.cpf" 
+            cpfMask [(ngModel)]="contato.cpf" name="cpf"/>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Email *" [(ngModel)]="contato.email" name="email">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Endereço" [(ngModel)]="contato.endereco" name="endereco">
+        </mat-form-field>
+        
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [(ngModel)]="contato.telefone" name="telefone">
+        </mat-form-field>
+
+    </form>
+    <button mat-raised-button (click)="createContato()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+
