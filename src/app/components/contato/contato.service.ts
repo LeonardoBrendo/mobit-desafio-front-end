@@ -11,7 +11,8 @@ import { environment } from 'src/environments/environment';
   providedIn: "root",
 })
 export class ContatoService {
-  baseUrl: string = environment.apiURLBase + "/api/contato";
+  //baseUrl: string = environment.apiURLBase + "/api/contato";
+  baseUrl = 'http://localhost:8080';
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
