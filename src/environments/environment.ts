@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiURLBase: 'https://cadastro-contato.herokuapp.com/'
+  apiURLBase: 'https://cadastro-contato.herokuapp.com'
 };
 
 /*
