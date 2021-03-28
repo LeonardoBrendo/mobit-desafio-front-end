@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   apiURLBase: 'https://cadastro-contato.herokuapp.com'
+  // apiURLBase: 'http://localhost:8080'
 };
 
 /*
